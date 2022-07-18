@@ -1,0 +1,18 @@
+
+<div class="row align-items-center gx-1 mb-3 border-bottom mb-md-4 mb-3">
+    <div class="col-auto">
+        <h4>{{Title}}</h4>
+    </div>
+    <div class="col-auto">
+        <div class="bg-primary-theme fw-500 h6 p-1 px-3 rounded-circle text-white">{{MyTeam.length}}</div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md" *ngFor="let team of MyTeam">
+        <app-team [team]="team" [Title]="Title"></app-team>
+    </div>
+</div>
+      
+
+

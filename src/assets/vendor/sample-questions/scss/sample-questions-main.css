@@ -1,0 +1,135 @@
+/* main css */
+.text-shadow-1 {
+  text-shadow: 1px 1px 2px #4d4d4d;
+}
+
+.text-shadow-2 {
+  text-shadow: 1px 1px 2px #bbbdf3;
+}
+
+.bg-success-preview {
+  background: #90f3b3;
+}
+
+.bg-danger-preview {
+  background: #f5735f;
+}
+
+/* jwplayer */
+.jwplayer-wrap .jw-skin-seven .jw-background-color {
+  background-color: #133880;
+}
+
+.jwplayer-wrap .jw-skin-seven .jw-rail {
+  background-color: #dce8ff;
+}
+
+.jwplayer-wrap .jw-skin-seven .jw-text-duration {
+  color: #dce8ff;
+}
+
+/* jwplayer */
+/* radio-checkbox-select */
+.form-check-input-wrap {
+  margin-top: .25rem !important;
+  margin-bottom: .25rem !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  padding: 5px 5px 5px 28px;
+}
+
+.form-check-input-wrap.checked-active {
+  background-color: #dce8ff;
+}
+
+.form-check-input-wrap .form-check-input {
+  width: 25px;
+  height: 25px;
+  margin-top: 0;
+  margin-right: 8px;
+  display: table;
+}
+
+.form-check-input-wrap .form-check-input:checked {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.form-check-input-wrap .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input-wrap .form-check-input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23000'/%3e%3c/svg%3e");
+}
+
+.form-check-input-wrap.preview-success {
+  background: #90f3b3;
+}
+
+.form-check-input-wrap.preview-success .form-check-input:checked {
+  background-color: #ecfdf2;
+  border-color: #ecfdf2;
+}
+
+.form-check-input-wrap.preview-success .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='green' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input-wrap.preview-success .form-check-input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='green'/%3e%3c/svg%3e");
+}
+
+.form-check-input-wrap.preview-danger {
+  background: #f5735f;
+}
+
+.form-check-input-wrap.preview-danger .form-check-input:checked {
+  background-color: #fef1ef;
+  border-color: #fef1ef;
+}
+
+.form-check-input-wrap.preview-danger .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='red'  xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd'  d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>");
+  background-size: 30px;
+}
+
+.form-check-input-wrap.preview-danger .form-check-input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='red'/%3e%3c/svg%3e");
+}
+
+/* radio-checkbox-select */
+@media (max-width: 767.98px) {
+  /* jwplayer */
+  .jwplayer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* jwplayer */
+}
+
+@media (max-width: 575.98px) {
+  /* jwplayer */
+  .jwplayer-wrap {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .jwplayer-wrap .jwplayer {
+    width: 100% !important;
+  }
+  .jwplayer-wrap .jw-slider-horizontal {
+    width: 100%;
+  }
+  /* jwplayer */
+}
+
+/* / main css */
+/*# sourceMappingURL=sample-questions-main.css.map */

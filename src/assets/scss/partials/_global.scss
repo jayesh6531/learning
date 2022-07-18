@@ -1,0 +1,507 @@
+/*footer buttom*/
+html{  scroll-behavior: smooth; }
+body{ min-height: 100vh; display: flex; flex-direction: column;  font-family: 'Roboto', sans-serif; font-size: 0.9rem; }
+main{flex: 1;} 
+footer{margin-top: auto !important;}
+/*footer buttom end*/
+a {color: $primary-color; text-decoration: none;
+  &:hover, &:focus { outline: none; text-decoration: none; color: darken($color:$primary-color, $amount:10%); }
+}
+
+.z-index-0{z-index: 0;}
+.z-index-1{z-index: 1;}
+/*custom typography*/
+.box-sizing-border-box{ box-sizing: border-box !important; }
+.border-dashed{border-style: dashed;}
+/*custom typography end*/
+.fw-100{ font-weight: 100 !important; }
+.fw-300{ font-weight: 300 !important; }
+.fw-500{ font-weight: 500 !important; }
+.fw-900{ font-weight: 900 !important; }
+
+.rounded-10 { border-radius: .6rem !important; }
+.rounded-15 { border-radius: .9rem !important; }
+.rounded-bottom-10 { border-bottom-right-radius:.6rem !important; border-bottom-left-radius:.6rem !important; }        
+.rounded-top-10 { border-top-left-radius: .6rem !important; border-top-right-radius: .6rem !important; }
+
+/*sosial media color*/
+.bg-facebook { background-color: $facebook !important; }
+.bg-twitter { background-color: $twitter !important; }
+.bg-youtube { background-color: $youtube !important; }
+.bg-instagram { background-color: $instagram !important; }
+.bg-whatsapp { background-color: $whatsapp !important; }
+.bg-telegram { background-color: $telegram !important; }
+.bg-linkedin { background-color: $linkedin !important; }
+.bg-email{ background-color: $email !important; }
+/*text color*/
+.text-facebook { color: $facebook !important; }
+.text-twitter { color: $twitter !important; }
+.text-youtube { color: $youtube !important; }
+.text-instagram { color: $instagram !important; }
+.text-whatsapp { color: $whatsapp !important; }
+.text-telegram { color: $telegram !important; } 
+.text-linkedin { color: $linkedin !important; }
+.text-email{ color: $email !important; } 
+/*sosial media color*/
+
+/*bg color*/
+.bg-black{ background-color:$black !important; }
+.bg-primary-theme { background: $primary-color !important; }
+.bg-secondary-theme { background: $secondary-color !important; }
+.bg-primary-theme-1 { background: #fef1ef !important;  }
+.bg-primary-theme-2 { background: #fef8ea !important; }
+.bg-primary-theme-3 { background: #ecfdf2 !important; }
+.bg-primary-theme-4 { background: #dce8ff !important; }
+.bg-primary-theme-4-light { background: #f1f6ff !important; }
+/*bg color*/
+
+/*text color*/
+.text-black{ color:$black !important; }
+.text-primary-theme { color: $primary-color !important; }
+.text-secondary-theme { color: $secondary-color !important; }
+.text-primary-theme-1 { color: darken($color: #fef1ef, $amount: 8%) !important; }
+/* .text-primary-theme-2 { color:darken($color: #fef8ea, $amount: 8%) !important; }
+.text-primary-theme-3 { color: darken($color: #ecfdf2, $amount: 8%) !important; } */
+.text-primary-theme-2 { color : #fce3a8 !important; }
+.text-primary-theme-3 { color : #a4f5c4 !important; }
+.text-primary-theme-4 { color:darken($color: #dce8ff, $amount: 8%) !important; }
+/*text color*/
+
+/* gradient*/
+.gradient-1 { @include bg-gradient-1; }
+.gradient-2 { @include bg-gradient-2; }
+.gradient-3 { @include bg-gradient-3; }
+.gradient-4 { @include bg-gradient-4; }
+.gradient-5 { @include bg-gradient-5; }
+.gradient-6 { @include bg-gradient-6; }
+.gradient-7 { @include bg-gradient-7; }
+.gradient-8 { @include bg-gradient-8; }
+.gradient-9 { @include bg-gradient-9; }
+.gradient-10 { @include bg-gradient-10; }
+/* gradient*/
+
+
+/*bootstrap*/
+
+
+/*btn-primary-theme*/
+.btn-primary-theme { color:$white; background-color: $primary-color; border-color:  $primary-color;
+  &:hover {
+    color:$white;
+    background-color: darken($color: $primary-color, $amount:10%);
+    border-color: darken($color: $primary-color, $amount:12%);
+}
+}
+.btn-check:active+.btn-primary-theme, .btn-check:checked+.btn-primary-theme, .btn-primary-theme.active, .btn-primary-theme:active, .show>.btn-primary-theme.dropdown-toggle {
+  color:$white;
+  background-color: darken($color: $primary-color, $amount:10%);
+  border-color: darken($color: $primary-color, $amount:12%);
+}
+.btn-check:active+.btn-primary-theme:focus, .btn-check:checked+.btn-primary-theme:focus, .btn-primary-theme.active:focus, .btn-primary-theme:active:focus, .show>.btn-primary-theme.dropdown-toggle:focus {
+  @include box-shadow (0 0 0 0.25rem rgba(19,56,119,.5));
+} 
+.btn-primary-theme:focus+.btn, .btn-primary-theme:focus{
+  color:$white;
+}
+/*btn-primary-theme*/
+
+
+/*btn-white-theme*/
+.btn-white-theme { color:$primary-color; background-color: $white; border-color:  $white;
+  &:hover {
+    color:$white;
+    background-color: darken($color: $primary-color, $amount:10%);
+    border-color: darken($color: $primary-color, $amount:12%);
+}
+}
+.hover-btn-arrow{ position: relative; overflow: hidden;
+  .hover-btn-text{ @include transition(ease all .5s);}
+  .hover-btn-icon{ margin-top:100px; @include transition(ease all .5s);}
+  &:hover{    
+    .hover-btn-text{ color: transparent;}
+    .hover-btn-icon{ margin-top: 0;}
+  }
+}
+.hover-btn-arrow1{  
+  .hover-btn-text{@include transition(ease all .5s);}
+  .hover-btn-icon{position: absolute; opacity: 0; top: 0; right: -20px; @include transition(ease all .5s);}
+  &:hover{        
+    .hover-btn-text{ padding-right: 20px;}
+    .hover-btn-icon{opacity: 1; right: 0;}    
+  }
+}
+
+.btn-check:active+.btn-white-theme, .btn-check:checked+.btn-white-theme, .btn-white-theme.active, .btn-white-theme:active, .show>.btn-white-theme.dropdown-toggle {
+  color:$white;
+    background-color: darken($color: $primary-color, $amount:10%);
+    border-color: darken($color: $primary-color, $amount:12%);
+}
+.btn-check:active+.btn-white-theme:focus, .btn-check:checked+.btn-white-theme:focus, .btn-white-theme.active:focus, .btn-white-theme:active:focus, .show>.btn-white-theme.dropdown-toggle:focus {
+@include box-shadow (0 0 0 0.25rem rgba(19,56,119,.5));
+} 
+.btn-white-theme:focus+.btn, .btn-white-theme:focus{
+  color:$white;
+  background-color: $primary-color; border-color:  $primary-color;
+}
+/*btn-white-theme*/
+
+/*btn theme light*/
+.btn-primary-theme-light {
+  background: #dce8ff;
+}
+.btn-check:checked + .btn-primary-theme-light {
+  color: $white !important;
+  background-color: darken($color: $primary-color, $amount: 10%);
+  border-color: darken($color: $primary-color, $amount: 15%);
+}
+/*/btn theme light*/
+
+
+
+
+.h1, h1 { font-size: calc(1.30rem + 1.5vw); }
+.h2, h2 { font-size: calc(1.15rem + .9vw); }
+.h3, h3 { font-size: calc(1.010rem + .6vw); }
+.h4, h4 { font-size: calc(1.05rem + .3vw); }
+.h5, h5 { font-size: calc(1.03rem + .01vw);}
+
+/* Accordion Button */
+.accordion-button{ color: #212529;}
+.accordion-button:not(.collapsed) {color: $primary-color;}
+.accordion-button::after{font-family: 'Line Awesome Free';  font-weight: 900; content: "\f107"; background: none;  color: $black; font-size: 22px;}
+.accordion-button:not(.collapsed)::after{background: none; color: $primary-color;}
+/* /Accordion Button */
+
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: $primary-color;
+}
+.progress-bar{
+  background-color: $primary-color;
+
+}
+.shadow { box-shadow: 0 .5rem 1rem rgba(193,204,224,.40)!important; }
+.shadow-sm { box-shadow: 0 .125rem .25rem rgba(193,204,224,.50)!important; }
+.shadow-lg { box-shadow: 0 1rem 3rem rgba(193,204,224,.70)!important; }
+.shadow-lg-black { box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; }
+
+.border-primary { border-color: $primary-color!important; }
+.form-check-input:checked { background-color:$primary-color;border-color: $primary-color;}
+.bg-light { background-color: #f8faff!important; }
+.bg-dark-theme { background-color: #879abf!important; }
+/*bootstrap/*
+/* hover*/
+.text-white-hover {
+  &:hover{
+    color: $white !important;
+  }
+ 
+   }
+.bg-white-hover{ 
+&:hover{
+  background:$white !important;
+}
+
+ }
+
+.hover-bg-secondary-theme{
+  @include transition(ease all 0.2s);
+  &:hover{
+    background: $secondary-color !important; 
+    color: #fff !important;
+  }
+}
+.hover-img-grayscale{
+  &:hover{
+    -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  }
+}
+.hover-img-grayscale1{
+  @include transition(ease all 0.3s);
+  &:hover{    
+    transform: scale(1.07);
+  }
+}
+.hover-text-primary-theme-child{
+  &:hover{    
+    .hover-text-primary-theme-w-p{color:$primary-color !important;}
+  }
+}
+.hover-border-gradient-5{
+  &:hover{
+    border-color:$pink !important;    
+  }
+}
+.hover-border-gradient-6{
+  &:hover{
+    border-color:$brass !important;    
+  }
+}
+.hover-border-gradient-7{
+  &:hover{
+    border-color:$green !important;    
+  }
+}
+.hover-border-gradient-8{
+  &:hover{
+    border-color:$primary-color !important;    
+  }
+}
+.hover-gradient-1{
+  &:hover{
+    @include bg-gradient-5;
+  }
+}
+.hover-gradient-2{
+  &:hover{
+    @include bg-gradient-6;
+  }
+}
+.hover-gradient-3{
+  &:hover{
+    @include bg-gradient-7;
+  }
+}
+.hover-gradient-4{
+  &:hover{
+    @include bg-gradient-8;
+  }
+}
+.hover-gradient-5{
+  &:hover{
+    @include bg-gradient-1;
+  }
+}
+.hover-gradient-6{
+  &:hover{
+    @include bg-gradient-2;
+  }
+}
+.hover-gradient-7{
+  &:hover{
+    @include bg-gradient-3;
+  }
+}
+.hover-gradient-8{
+  &:hover{
+    @include bg-gradient-4;
+  }
+}  
+
+/* .position-fixed.bottom-0.start-0{ display: none !important;} */
+/* hover*/
+
+
+
+
+/* backtop */
+.backtop{@include transition(ease all 0.3s); position: relative; right: -100%; opacity: 0;
+  &.backtopActive{right:0; opacity: 10;}
+  &.stripeActive{ right:0; margin-bottom: -80px;
+    &.backtopActive{
+      margin-bottom: 0;
+    }  
+  }
+}
+.stripeSticker{@include transition(ease all 0.3s); position: relative; right: 0; opacity: 0; margin-bottom: -80px;
+  &.stripeStickerActive{ right:0; opacity: 10; margin-bottom: 0;    
+  }
+}
+/* /backtop */
+
+/*  */
+
+/*sidebar social*/
+/* Right Widget */
+.sidebar-social-r-to-l-wrap{display: block !important; height: auto !important; @include transition(ease all 0.2s); margin-left: 46px; height: auto !important;
+  &.collapsing{height: auto !important;}
+   &.show{margin-left:0; display: block !important;} 
+ 
+   .hover-r-to-l{
+    a{ @include transition(ease all 0.2s); right: 0; position: relative;
+     small{ font-weight: normal; font-size: 12px; text-transform: uppercase;}
+     &:hover{ right: 84px;}
+   }
+  }
+  }
+  .socialcollapse-flip-arrow{
+    .SocialCollapseL.collapsed{ 
+      .d-none{ display: block !important;}
+      .d-block{ display: none !important;}
+    }
+  }    
+ 
+ /* /Right Widget */
+  
+ /*sidebar social end*/
+
+
+/* video in modal */
+.modal-video-style-1 { .btn-close { position: absolute; top: 0; right: 0; @include transform(translate(100%, -100%)); opacity: 1;
+  i { color: $white; }
+}
+}
+/* video in modal */
+
+.rotate-45{ @include transform ( rotate(45deg)); @include transition ( all 2.3s ease); }
+.rotate-45-reverse{ @include transform ( rotate(-45deg)); }
+ 
+
+.rounded-circle-ratio { position: relative; overflow: hidden;
+  img { position: absolute; top: 0; left: 0; right: 0; height: 100%; object-fit: cover; margin: auto;}
+  &::before { content: ""; padding-top: 100%; display: block; }
+}
+
+/*hover style*/
+ .card-wrap-hover{
+   &:hover{
+    .icon-hover{      
+      background-color: #dce8ff !important;
+      color: $primary-color !important;
+    }
+    .btn-white-theme-hover{
+      color:$white;
+      background-color: darken($color: $primary-color, $amount:10%);
+      border-color: darken($color: $primary-color, $amount:12%);
+    }
+   }
+ }
+/*hover style*/
+ 
+ /*tab style*/
+.tab-style-1  {
+  .nav-link{
+    &.active {
+      i{
+        color: #133880 !important;
+      }
+      
+    }
+  }
+}
+.tab-style-2  {
+  .nav-link{ border: 0;
+    &.active {@include bg-gradient-7;
+      i{
+        color: #133880 !important;
+      }      
+    }
+  }
+}
+.tab-style-3  {
+  .nav-link{ border: 0; position: relative;      
+    &.active {@include bg-gradient-7; padding-bottom: 65px !important;            
+      &::before{
+        content: "";
+        background-image: url(../../images/tab-Bottom.svg) !important; 
+        background-repeat: no-repeat !important;
+        position: absolute;
+        bottom: 0;
+        width: 100%;        
+        height: 55px;
+        left: 0;        
+        margin-bottom: -1px;
+      }
+    }
+  }
+}
+.tab-style-4{
+  .nav-link{ border: 0; position: relative;      
+    &.active {@include bg-gradient-7; padding-bottom: 40px !important;            
+      &::before{
+        content: "";
+        background-image: url(../../images/tab-Bottom-small.svg) !important; 
+        background-repeat: no-repeat !important;
+        background-position: center bottom;
+        background-size:100% auto;
+        position: absolute;
+        bottom: 0;
+        width: 100%;        
+        height: 34px;        
+        left: 0;        
+        margin-bottom: -1px;
+      }
+      &.nav-pb-30{
+        padding-bottom: 31px !important;
+      }
+    }    
+  }
+}
+.nav-pills-1{
+  .nav-link{ border: 0; position: relative;      
+    &.active {
+      background-color: transparent !important;
+      color: $primary-color !important;
+    }
+  }
+}
+.nav-pills-2{
+  .nav-link{ border: 0; position: relative;      
+    &.active {
+      background-color: transparent !important;
+     border-color: $primary-color !important;
+    }
+  }
+}
+ /*tab style*/
+
+/* banner repeat bg*/
+ 
+ .banner-repeat-bg:before {
+  content: "";
+  background-image: url(../../images/banner-partners.png);
+  position: absolute;
+  background-repeat: repeat;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.1;
+}
+/* banner repeat bg*/ 
+
+.radio-label-checked-wrap{
+  .btn-check:checked+.radio-label-checked,
+  .btn.radio-label-checked:hover,.btn.radio-label-checked:active {
+    @extend .gradient-3;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+.radio-checked-border-primary{
+  &.checked-active{ border-color: $primary-color !important;}
+}
+.text-primary-theme-50 {
+  color: rgba(19, 56, 128, 0.5) !important;
+}
+
+/* UI Datepicker */
+.ui-widget.ui-widget-content{ border-color: #dce8ff !important;}
+.ui-widget-header{ border-color: #dce8ff !important; background-color: #dce8ff; color: $primary-color;}
+.ui-datepicker th{color: $primary-color;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+{ background-color: #dce8ff; border-color: #dce8ff; text-align: center;}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus{ background-color: #b9c9e8;}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{ background-color:lighten($color: $primary-color, $amount: 40%); color: #fff !important;}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{ color: $white; background-color: $primary-color;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span{
+  @include lineawesome
+}
+.big-datepicker{
+  .ui-widget-header{ background-color: transparent; border: 0;}
+  .ui-widget.ui-widget-content{ width: 100%; font-size: 18px; border:0;}  
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  { background-color: transparent; border-color: $white; text-align: center;}
+  .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus{ background-color: #b9c9e8;}
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+    background-color:lighten($color: $primary-color, $amount: 40%) !important; 
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{ background-color: $primary-color;}  
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{ border-radius: 50%;}
+}
+/* /UI Datepicker */
+
+
+

@@ -1,0 +1,54 @@
+<main>
+    <!-- Banner -->
+    <div class="position-relative banner-repeat-bg">
+        <div class="py-5 overflow-hidden"
+            style="background-image: url(../../../assets/images/banner-bg.svg); background-repeat: no-repeat; background-size: cover;">
+            <div class="header-spacer"></div>
+        </div>
+        <img class="img-fluid w-100 bottom-0 position-absolute img-spacer"
+            src="../../../assets/images/shape-banner-bottom.svg" alt="banner">
+    </div>
+    <!-- Banner -->
+
+    <!--  -->
+    <section class="py-3 py-md-5">
+        <div class="container">
+            <h4 class="text-primary-theme mb-1 mb-md-2">Pipes</h4>
+
+            <p>The hero's birthday is {{ dates.todaydate | date}}</p>
+            <p>File Size is {{ file.size | filesize }}</p>
+            
+
+            <h4 class="text-primary-theme mb-1 mb-md-2">{{heading}}</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered" id='tab'>                
+                    <thead>
+                        <tr>                            
+                            <th scope="col">Name</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Office</th>
+                            <th scope="col">Salary</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let e of listdata;">                            
+                            <td>{{ e.name }}</td>
+                            <td>{{ e.position }}</td>
+                            <td>{{ e.office }}</td>
+                            <td>{{ e.salary }}</td>
+                            <td class="text-center"><img src="{{itemImageUrl}}" class="img-fluid me-2" width="30" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <h4 class="text-primary-theme mb-1 mb-md-2">Component Interation</h4>
+            <p>Parent to Child using - <span class="text-primary-theme h6">@Input()</span></p>
+            <app-about></app-about>
+        </div>
+    </section>
+
+    
+</main>
